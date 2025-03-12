@@ -51,14 +51,17 @@ The process of injecting one class object to another class through variable  met
 
 * Autowiring means IOC will automatically identified the dependent obj and target obj and inject it .
 We can perfoms autowire in 4 ways:
+
 1.ByName 
-  if target class variable name must be matched with dependent bean variable id.
+
+ * if target class variable name must be matched with dependent bean variable id.
      <bean id="engine" class= "in.kunal.beans.PetrolEng"/>
      <bean id="car"  class= "in.kunal.beans.Car"  autowired=ByName/>
      
      
 2.ByType
-*if target class datatype name must be matched with dependent bean.
+
+* if target class datatype name must be matched with dependent bean.
      <bean id="engine" class= "in.kunal.beans.PetrolEng"/>
      <bean id="car"  class= "in.kunal.beans.Car"  autowired=ByType/>
 
@@ -66,10 +69,11 @@ We can perfoms autowire in 4 ways:
      
 
 3.Constructor
-*if your using constructor injection it will use internally ByType way to perform dependency injection. 
+* if your using constructor injection it will use internally ByType way to perform dependency injection. 
  
 4.None
-*it will not perform any dependency injection.
+
+* it will not perform any dependency injection.
 
 
 
